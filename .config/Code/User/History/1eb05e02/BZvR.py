@@ -12,7 +12,7 @@ import random
 import requests
 
 # === Spoonacular API Integration ===
-def fetch_spoonacular_recipes(query="avocado", number=100, api_key="1db091aa2f084dfdb05116ef53f9db1e"):
+def fetch_spoonacular_recipes(query="avocado", number=100, api_key=""):
     url = "https://api.spoonacular.com/recipes/complexSearch"
     params = {
         "query": query,
@@ -155,7 +155,7 @@ def generate(model, vocab, prompt, max_len=20):
 # === Main Run ===
 if __name__ == "__main__":
     SPOONACULAR_API_KEY = os.getenv("SPOONACULAR_API_KEY", "")
-    recipe_data = fetch_spoonacular_recipes(query="avocado", api_key="1db091aa2f084dfdb05116ef53f9db1e")
+    recipe_data = fetch_spoonacular_recipes(query="avocado", api_key="")
 
     descriptions = load_descriptions_spoonacular(recipe_data)
     print(f"Loaded {len(descriptions)} Spoonacular recipe descriptions.")

@@ -8,7 +8,7 @@ import json, os, re
 
 app = Flask(__name__)
 os.makedirs("uploaded_jsons", exist_ok=True)
-api_key="AIzaSyCq7zNTN3pebYJB2f-BT2t031pvwc85t8c"
+api_key=""
 # === Embedding Setup (No sentence_transformers) ===
 tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/all-MiniLM-L6-v2")
 model = AutoModel.from_pretrained("sentence-transformers/all-MiniLM-L6-v2")

@@ -11,7 +11,7 @@ from sentence_transformers import SentenceTransformer
 import google.generativeai as genai
 
 # === CONFIG ===
-genai.configure(api_key="AIzaSyDgqFUJYnozGy3TmJwMKw_LpsdJtWHRnKM")  # Replace with your Gemini key
+genai.configure(api_key="")  # Replace with your Gemini key
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 dimension = 384
 index = faiss.IndexFlatL2(dimension)
@@ -19,7 +19,6 @@ index_is_empty = True
 product_metadata = []
 
 # === Kroger OAuth2 Token ===
-CREDS = 'Basic emVuZGF5Mi0yNDMyNjEyNDMwMzQyNDM4NGU3NTRiMzA0Mjc0Mzg3MTM0NGY3MjM0NDI0ODU3NWE0MzRiMzc1NzJlNDI0MTZhNTM0OTY0NWEzNTQ4NzAzNTRhNGQ1NjYzNmY3MDMxNGUzNzcwNGQ2YzZiNTk3MTVhNjI3MzY0NGY0OT='
 C="Basic emVuZGF5Mi0yNDMyNjEyNDMwMzQyNDM4NGU3NTRiMzA0Mjc0Mzg3MTM0NGY3MjM0NDI0ODU3NWE0MzRiMzc1NzJlNDI0MTZhNTM0OTY0NWEzNTQ4NzAzNTRhNGQ1NjYzNmY3MDMxNGUzNzcwNGQ2YzZiNTk3MTVhNjI3MzY0NGY0OTYwMTgzNDIzMDA3MzIzMzA4Om40Wm50Q0ZobEdqdHpLY0JKcVI2VUx3QUVTcTM2TGx6R1NFbkJvOWg="
 
 

@@ -144,7 +144,7 @@ def generate(model, vocab, prompt, max_len=20):
 
 # === Main Run ===
 if __name__ == "__main__":
-    SPOONACULAR_API_KEY = '1db091aa2f084dfdb05116ef53f9db1e'
+    SPOONACULAR_API_KEY = ''
     recipe_data = fetch_spoonacular_recipes(query="gestational diabetes", api_key=SPOONACULAR_API_KEY)
 
     descriptions = load_descriptions_spoonacular(recipe_data)

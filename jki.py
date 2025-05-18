@@ -12,7 +12,7 @@ import random
 import requests
 
 # === Spoonacular API Ingredient Scan ===
-def fetch_ingredient_names(query="avocado", number=100, api_key="1db091aa2f084dfdb05116ef53f9db1e"):
+def fetch_ingredient_names(query="avocado", number=100, api_key=""):
     url = "https://api.spoonacular.com/food/ingredients/search"
     params = {
         "query": query,
@@ -28,7 +28,7 @@ def fetch_ingredient_names(query="avocado", number=100, api_key="1db091aa2f084df
         return []
 
 # === Spoonacular Recipe Search API ===
-def fetch_spoonacular_recipes(query="diabetic", number=100, api_key="1db091aa2f084dfdb05116ef53f9db1e"):
+def fetch_spoonacular_recipes(query="diabetic", number=100, api_key=""):
     url = "https://api.spoonacular.com/recipes/complexSearch"
     params = {
         "query": query,

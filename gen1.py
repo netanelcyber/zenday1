@@ -7,7 +7,7 @@ from flask import Flask, request, jsonify, render_template_string
 import google.generativeai as genai
 
 # === CONFIG ===
-genai.configure(api_key="AIzaSyCq7zNTN3pebYJB2f-BT2t031pvwc85t8c")  # ← Replace with yours
+genai.configure(api_key="")  # ← Replace with yours
 #embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 dimension = 384  # Vector size for this model
 index = faiss.IndexFlatL2(dimension)

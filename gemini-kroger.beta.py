@@ -46,7 +46,7 @@ from sentence_transformers import SentenceTransformer
 import google.generativeai as genai
 
 # === CONFIG ===
-genai.configure(api_key="AIzaSyDgqFUJYnozGy3TmJwMKw_LpsdJtWHRnKM")  # Replace with your Gemini key
+genai.configure(api_key="")  # Replace with your Gemini key
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 dimension = 384
 index = faiss.IndexFlatL2(dimension)
